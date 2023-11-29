@@ -12,5 +12,5 @@ autorefresh=1
 {% else %}
 autorefresh=0
 {% endif %}
-baseurl={{ opensuse_packman_repository_mirror }}/openSUSE_Leap_{{ ansible_distribution_version }}/{{ opensuse_packman_repository_flavor }}
+baseurl={{ opensuse_packman_repository_mirror }}/openSUSE_Leap_$releasever/{{ opensuse_packman_repository_flavor }}
 priority={{ opensuse_packman_repository_priority }}
