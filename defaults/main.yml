@@ -1,0 +1,8 @@
+---
+# opensuse_packman_repository/defaults/main.yml
+
+opensuse_packman_repository_flavor: 'Essentials'
+opensuse_packman_repository_mirror: 'https://ftp.gwdg.de/pub/linux/misc/packman/suse'
+opensuse_packman_repository_priority: 90
+opensuse_packman_repository_enabled: true
+opensuse_packman_repository_autorefresh: true
