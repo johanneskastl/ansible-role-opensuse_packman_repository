@@ -8,3 +8,8 @@
     owner: 'root'
     group: 'root'
     mode: '0644'
+  when:
+    - '
+      ansible_distribution == "SLES" or
+      ansible_distribution == "openSUSE Leap"
+      '
