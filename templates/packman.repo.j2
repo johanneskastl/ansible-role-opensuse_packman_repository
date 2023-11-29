@@ -2,7 +2,7 @@
 # {{ ansible_managed }}
 #
 [packman-{{ opensuse_packman_repository_flavor | lower }}]
-{% opensuse_packman_repository_enabled | bool %}
+{% if opensuse_packman_repository_enabled | bool %}
 enabled=1
 {% else %}
 enabled=0
