@@ -1,0 +1,16 @@
+#
+# {{ ansible_managed }}
+#
+[packman-{{ opensuse_packman_repository_flavor | lower }}]
+{% opensuse_packman_repository_enabled | bool %}
+enabled=1
+{% else %}
+enabled=0
+{% endif %}
+{% if opensuse_packman_repository_autorefresh | bool %}
+autorefresh=1
+{% else %}
+autorefresh=0
+{% endif %}
+baseurl={{ opensuse_packman_repository_mirror }}/openSUSE_Leap_{{ ansible_distribution_version }}/{{ opensuse_packman_repository_flavor }}
+priority={{ opensuse_packman_repository_priority }}
