@@ -1,0 +1,10 @@
+---
+# opensuse_packman_repository/tasks/main.yml
+
+- name: 'Create the packman repository file'
+  ansible.builtin.template:
+    src: 'packman.repo.j2'
+    dest: "/etc/zypp/repos.d/packman-{{ opensuse_packman_repository_flavor | lower }}.repo"
+    owner: 'root'
+    group: 'root'
+    mode: '0644'
