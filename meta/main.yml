@@ -1,0 +1,21 @@
+galaxy_info:
+  role_name: 'opensuse_packman_repository'
+  namespace: 'johanneskastl'
+  author: 'Johannes Kastl'
+  description: 'Add the packman zypper repository on openSUSE/SLES'
+
+  license: 'BSD-3-Clause'
+
+  min_ansible_version: '2.12'
+
+  platforms:
+    - name: opensuse
+      versions:
+        - all
+    - name: SLES
+      versions:
+        - all
+
+  galaxy_tags: []
+
+dependencies: []
